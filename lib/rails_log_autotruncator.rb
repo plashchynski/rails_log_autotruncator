@@ -11,7 +11,7 @@ module ActiveSupport
           @log.write(all_content.string)
         end
 
-        if @log.size > 1_000_000
+        if @log.stat.size > 1_000_000
           log = @log.path
           @log.close
           File.atomic_write(log) do |file|
