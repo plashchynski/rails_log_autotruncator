@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rails_log_autotruncator}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dmitry Plashchynski"]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "init.rb",
     "lib/rails_log_autotruncator.rb",
+    "rails_log_autotruncator.gemspec",
     "spec/rails_log_autotruncator_spec.rb",
     "spec/spec_helper.rb"
   ]
