@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dmitry Plashchynski"]
   s.date = %q{2011-04-10}
-  s.description = %q{rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development log file becomes large.}
+  s.description = %q{rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development or test log file becomes large.}
   s.email = %q{plashchynski@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",

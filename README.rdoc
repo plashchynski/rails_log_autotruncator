@@ -15,7 +15,11 @@ Add the rails_log_autotruncator to your Gemfile:
 gem 'rails_log_autotruncator'
 
 === Rails 2 Without Bundler
-Just write the following to your environment.rb to Rails::Initializer.run block:
+do:
+
+gem install rails_log_autotruncator
+
+then write the following to your environment.rb to Rails::Initializer.run block:
 
 config.gem "rails_log_autotruncator", :lib => "rails_log_autotruncator"
 
