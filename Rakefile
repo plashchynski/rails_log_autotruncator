@@ -8,7 +8,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/plashchynski/rails_log_autotruncator"
   gem.license = "MIT"
   gem.summary = %Q{The tool for automatically rotating and truncating a rails development log file}
-  gem.description = %Q{rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development log file becomes large.}
+  gem.description = %Q{rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development or test log file becomes large.}
   gem.email = "plashchynski@gmail.com"
   gem.authors = ["Dmitry Plashchynski"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
