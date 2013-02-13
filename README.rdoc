@@ -2,6 +2,13 @@
 
 rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development or test log file becomes large.
 
+You don't need this gem if you use ruby 1.9.3, just add the following code to your environment config file:
+
+  config.logger = Logger.new(config.paths.log.first, 1, 5.megabytes)
+
+5.megabytes is max log file size in this case. You can adjust it according to your needs.
+
+
 == Compatibility
 
 * Ruby 1.9.2 Rails 3.0.6
