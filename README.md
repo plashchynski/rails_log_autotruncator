@@ -21,7 +21,9 @@ You don't need this gem for ruby 1.9.3 and up. You can add the following code to
 ##### Bundler
 Add the rails_log_autotruncator gem to your Gemfile:
 
-    gem 'rails_log_autotruncator'
+    group :development, :test do
+      gem 'rails_log_autotruncator'
+    end
 
 
 ##### Rails 2 without Bundler
