@@ -13,14 +13,16 @@ Gem::Specification.new do |s|
   s.description = %q{rails_log_autotruncator is a simple patch for ActiveSupport::BufferedLogger that limits a log file size. Use it if you just don't want your rails project development or test log file becomes large.}
   s.email = %q{plashchynski@gmail.com}
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    "LICENSE",
+    "NOTICE",
+    "README.md"
   ]
   s.files = [
     ".document",
     ".rspec",
-    "LICENSE.txt",
-    "README.rdoc",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
     "Rakefile",
     "VERSION",
     "init.rb",
