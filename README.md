@@ -4,7 +4,12 @@ rails_log_autotruncator is a simple (monkey)patch for ActiveSupport::BufferedLog
 
 
 ### Disclaimer
-You don't need this gem for ruby 1.9.3 and up. You can add the following code to your environment config file (i.e. config/environments/test.rb):
+You don't need this gem for ruby 1.9.3 and up. You can add the following code to your environment config file (i.e. config/environments/test.rb) for Rails 4.*:
+```ruby
+config.logger = Logger.new(config.paths['log'].first, 1, 5.megabytes)
+```
+
+For Rails 3.*:
 ```ruby
 config.logger = Logger.new(config.paths.log.first, 1, 5.megabytes)
 ```
